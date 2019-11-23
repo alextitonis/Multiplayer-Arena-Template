@@ -31,7 +31,7 @@ namespace Spawner
             TcpListener tcpListener = null;
             try
             {
-                tcpListener = new TcpListener(ipAddress, 666);
+                tcpListener = new TcpListener(ipAddress, port);
                 tcpListener.Start();
             }
             catch (SocketException ex)
